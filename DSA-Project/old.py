@@ -9,8 +9,9 @@ import csv
 
 
 Landing_page = ctk.CTk()
-Landing_page.title("Arcade")
+Landing_page.title("inKOGnito")
 Landing_page.geometry("1366x768")
+Landing_page.iconbitmap("Banners\(DSA App Logo) [Logo] {Version 4} November 24, 2023.ico")
 ctk.set_appearance_mode('dark')
 
 
