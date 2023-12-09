@@ -1,4 +1,4 @@
-('D:\\programmmms\\DSA APP FINAL\\GAMES\\Donkey '
+('D:\\programmmms\\inKOGnito\\inKOGnito-Arcade-Game\\DSA-Project\\GAMES\\Donkey '
  'Kong\\build\\DonkeyKong_KendraTam_PythonProgrammi\\PYZ-00.pyz',
  [('__future__', 'D:\\programmmms\\Lib\\__future__.py', 'PYMODULE'),
   ('_aix_support', 'D:\\programmmms\\Lib\\_aix_support.py', 'PYMODULE'),

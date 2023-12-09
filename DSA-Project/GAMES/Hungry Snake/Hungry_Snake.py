@@ -85,9 +85,16 @@ wn.onkeypress(go_down, "s")
 wn.onkeypress(go_left, "a")
 wn.onkeypress(go_right, "d")
 
+def quit():
+    global running
+    running = False
+
+wn.onkeypress(quit, 'q')
+
+running = True
 # Main game loop
-while True:
-    wn.update()
+while running:
+    
 
     # Check for a collision with the border
     if head.xcor()>290 or head.xcor()<-290 or head.ycor()>290 or head.ycor()<-290:
@@ -178,5 +185,7 @@ while True:
             pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Courier", 24, "normal"))
 
     time.sleep(delay)
+
+wn.bye()
 
 wn.mainloop()

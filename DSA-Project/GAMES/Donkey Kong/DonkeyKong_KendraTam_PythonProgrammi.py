@@ -749,7 +749,7 @@ while replay:
     while inPlay:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
+               inPlay = False
         
         #if the climbing is happening, check how much DK has climbed
         if pressed == True and climbDone == False:

@@ -565,7 +565,7 @@ def start_button_event():
 
     # ------------------------------------------------------------------------------------------------------------------------------------
     def game7_event():
-        os.startfile('GAMES\Tic-Tac-Toe-Game-In-Python-master\dist\Tic_Tac_Toe_Game.exe')
+        os.startfile('GAMES\Tic-Tac-Toe-Game-In-Python-master\Tic_Tac_Toe_Game.exe')
 
     game7 = ctk.CTkButton(
         master=game_frame3,
@@ -597,7 +597,7 @@ def start_button_event():
 
     # ------------------------------------------------------------------------------------------------------------------------------------
     def game9_event():
-        os.startfile("GAMES\Hungry Snake\dist\Hungry_Snake.exe")
+        os.startfile("GAMES\Hungry Snake\Snake.exe")
 
     game9 = ctk.CTkButton(
         master=game_frame3,
