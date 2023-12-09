@@ -117,10 +117,8 @@ class Matris(object):
                 self.paused = not self.paused
             elif event.type == pygame.QUIT:
                 self.gameover(full_exit=True)
-            
             elif pressed(pygame.K_ESCAPE):
                 self.gameover()
-              
 
         if self.paused:
             return self.needs_redraw
@@ -195,7 +193,6 @@ class Matris(object):
             pygame.quit()
         else:
             raise GameOver("Sucker!")
-         
 
     def place_shadow(self):
         posY, posX = self.tetromino_position
@@ -405,14 +402,13 @@ class Game(object):
         screen.blit(matris_border, (MATRIS_OFFSET, MATRIS_OFFSET))
 
         self.redraw()
+
         while True:
             try:
                 timepassed = clock.tick(50)
                 if self.matris.update((timepassed / 1000.0) if not self.matris.paused else 0):
                     self.redraw()
-                    
             except GameOver:
-
                 return
 
     def redraw(self):
@@ -491,14 +487,13 @@ class Menu(object):
         highscoresurf = self.construct_highscoresurf()
 
         timepassed = clock.tick(30) / 1000.0
-        running = True
-        
-        while running:
+
+        while self.running:
             events = pygame.event.get()
 
             for event in events:
                 if event.type == pygame.QUIT:
-                    running = False
+                    pygame.quit()
 
             menu.update(events, timepassed)
 
