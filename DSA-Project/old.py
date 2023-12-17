@@ -253,7 +253,10 @@ def register_Acc():
         user_input = enter_Newuser.get()
         pass_input = enter_Newpass.get()
 
-        if user_Exist(user_input):
+        if not user_input:
+            messagebox.showerror("Registration Error", "Username cannot be empty. Please enter a username.")
+
+        elif user_Exist(user_input):
             messagebox.showerror("Invalid Username", "Username already taken. Please choose another one.")
             
             enter_Newuser.delete(0, 'end')
