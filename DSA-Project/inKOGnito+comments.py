@@ -599,7 +599,7 @@ def start_button_event():
         height = 400,
         width = 300,
         fg_color = ("#F875AA", "#8758FF"),
-        hover_colo = ("#AEDEFC", "#5CB8E4"),
+        hover_color = ("#AEDEFC", "#5CB8E4"),
         image = bomber_banner,
         command = game6_event,
         text = ""
@@ -692,7 +692,7 @@ def start_button_event():
 
 
 # Main loop event of the program.
-    
+
 # Main Login Frame
 main_login_frame = ctk.CTkFrame(
     Landing_page, 
